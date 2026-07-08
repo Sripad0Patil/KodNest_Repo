@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+  color: blueviolet;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h5 {
+  text-align: center;
+  background-color: bisque;
+  color: red;
+}
+
+p {
+  border: 2px solid black;
+}
