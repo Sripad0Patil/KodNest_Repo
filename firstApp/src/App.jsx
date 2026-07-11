@@ -35,7 +35,7 @@ function App() {
       <Greeting n={name}/>
       <h2>Count: {count}</h2>
       <button onClick={() => setCount(count + 1)}>count</button>
-      <h2>Timer: {timer}</h2>;
+      <h2>Timer: {timer}</h2>
 
     </div>
   )
