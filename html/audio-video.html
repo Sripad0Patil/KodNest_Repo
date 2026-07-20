@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Audio Video Reference</title>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<h1>
+    HTML Audio & Video Reference
+</h1>
+
+
+<p>
+    Complete examples of HTML multimedia elements and attributes.
+</p>
+
+
+
+<nav>
+
+
+<a href="index.html">
+    Home
+</a>
+
+
+|
+
+
+<a href="media.html">
+    Media
+</a>
+
+
+|
+
+
+<a href="images.html">
+    Images
+</a>
+
+
+
+</nav>
+
+
+
+</header>
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<main>
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- AUDIO BASIC -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    1. Basic Audio Element (&lt;audio&gt;)
+</h2>
+
+
+
+<p>
+The audio tag is used to embed sound files.
+</p>
+
+
+
+<audio controls>
+
+
+<source
+src="song.mp3"
+type="audio/mpeg">
+
+
+Your browser does not support audio.
+
+
+</audio>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- AUDIO FORMATS -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    2. Audio Multiple Sources
+</h2>
+
+
+
+<audio controls>
+
+
+<source
+src="song.mp3"
+type="audio/mpeg">
+
+
+<source
+src="song.ogg"
+type="audio/ogg">
+
+
+<source
+src="song.wav"
+type="audio/wav">
+
+
+Your browser does not support audio.
+
+
+</audio>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- AUDIO ATTRIBUTES -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    3. Audio Attributes
+</h2>
+
+
+
+<ul>
+
+
+<li>
+controls - displays audio controls
+</li>
+
+
+<li>
+autoplay - starts automatically
+</li>
+
+
+<li>
+loop - repeats audio
+</li>
+
+
+<li>
+muted - starts muted
+</li>
+
+
+<li>
+preload - controls loading behavior
+</li>
+
+
+</ul>
+
+
+
+<h3>
+Example
+</h3>
+
+
+
+<audio
+controls
+loop
+muted
+preload="auto">
+
+
+<source
+src="music.mp3"
+type="audio/mpeg">
+
+
+</audio>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- VIDEO BASIC -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    4. Basic Video Element (&lt;video&gt;)
+</h2>
+
+
+
+<p>
+The video tag embeds video content.
+</p>
+
+
+
+<video
+width="500"
+controls>
+
+
+<source
+src="movie.mp4"
+type="video/mp4">
+
+
+Your browser does not support video.
+
+
+</video>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- VIDEO MULTIPLE SOURCES -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    5. Video Multiple Sources
+</h2>
+
+
+
+<video
+width="500"
+controls>
+
+
+<source
+src="movie.mp4"
+type="video/mp4">
+
+
+<source
+src="movie.webm"
+type="video/webm">
+
+
+<source
+src="movie.ogg"
+type="video/ogg">
+
+
+Your browser does not support video.
+
+
+</video>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- VIDEO ATTRIBUTES -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    6. Video Attributes
+</h2>
+
+
+
+<ul>
+
+
+<li>
+controls
+</li>
+
+
+<li>
+autoplay
+</li>
+
+
+<li>
+loop
+</li>
+
+
+<li>
+muted
+</li>
+
+
+<li>
+poster
+</li>
+
+
+<li>
+preload
+</li>
+
+
+<li>
+width
+</li>
+
+
+<li>
+height
+</li>
+
+
+</ul>
+
+
+
+<h3>
+Example
+</h3>
+
+
+
+<video
+width="500"
+height="300"
+controls
+poster="thumbnail.jpg"
+preload="metadata">
+
+
+<source
+src="video.mp4"
+type="video/mp4">
+
+
+</video>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- AUTOPLAY VIDEO -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    7. Autoplay Video
+</h2>
+
+
+
+<video
+width="400"
+autoplay
+muted
+loop>
+
+
+<source
+src="background.mp4"
+type="video/mp4">
+
+
+</video>
+
+
+
+<p>
+Autoplay usually requires muted audio in modern browsers.
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- TRACK SUBTITLES -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    8. Track Element (Subtitles)</h2>
+
+
+
+<video
+width="500"
+controls>
+
+
+
+<source
+src="movie.mp4"
+type="video/mp4">
+
+
+
+<track
+src="english.vtt"
+kind="subtitles"
+srclang="en"
+label="English">
+
+
+
+<track
+src="hindi.vtt"
+kind="subtitles"
+srclang="hi"
+label="Hindi">
+
+
+
+</video>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- TRACK TYPES -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    9. Track Kinds
+</h2>
+
+
+
+<ul>
+
+
+<li>
+subtitles - translated dialogue
+</li>
+
+
+<li>
+captions - audio description for deaf users
+</li>
+
+
+<li>
+descriptions - description of video
+</li>
+
+
+<li>
+chapters - navigation chapters
+</li>
+
+
+<li>
+metadata - extra information
+</li>
+
+
+</ul>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- EMBEDDING YOUTUBE -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    10. YouTube Video using iframe
+</h2>
+
+
+
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/video_id"
+title="YouTube video"
+allowfullscreen>
+
+
+</iframe>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- MEDIA ATTRIBUTES -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    11. Complete Media Attributes
+</h2>
+
+
+
+<table border="1">
+
+
+<tr>
+
+<th>
+Attribute
+</th>
+
+<th>
+Purpose
+</th>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+controls
+</td>
+
+<td>
+Shows player controls
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+autoplay
+</td>
+
+<td>
+Starts automatically
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+loop
+</td>
+
+<td>
+Repeats media
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+muted
+</td>
+
+<td>
+Starts without sound
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+poster
+</td>
+
+<td>
+Video thumbnail image
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+preload
+</td>
+
+<td>
+Controls loading
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+src
+</td>
+
+<td>
+Media file location
+</td>
+
+</tr>
+
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- SUPPORTED FORMATS -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    12. Common Media Formats
+</h2>
+
+
+
+<h3>
+Audio
+</h3>
+
+
+<ul>
+
+<li>
+MP3 (.mp3)
+</li>
+
+<li>
+WAV (.wav)
+</li>
+
+<li>
+OGG (.ogg)
+</li>
+
+</ul>
+
+
+
+<h3>
+Video
+</h3>
+
+
+<ul>
+
+<li>
+MP4 (.mp4)
+</li>
+
+<li>
+WebM (.webm)
+</li>
+
+<li>
+OGG (.ogv)
+</li>
+
+</ul>
+
+
+
+</section>
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<footer>
+
+
+<p>
+HTML Reference Guide - Audio & Video
+</p>
+
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>

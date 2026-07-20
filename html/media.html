@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Media Reference</title>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>
+        HTML Media Reference
+    </h1>
+
+
+    <p>
+        Complete examples of HTML media elements and attributes.
+    </p>
+
+
+
+    <nav>
+
+
+        <a href="index.html">
+            Home
+        </a>
+
+
+        |
+
+
+        <a href="images.html">
+            Images
+        </a>
+
+
+        |
+
+
+        <a href="audio-video.html">
+            Audio Video
+        </a>
+
+
+    </nav>
+
+
+</header>
+
+
+
+
+<hr>
+
+
+
+
+
+<main>
+
+
+
+
+
+<!-- ================================= -->
+<!-- IMAGE -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    1. Image Element (&lt;img&gt;)
+</h2>
+
+
+<p>
+    Used to display images on a webpage.
+</p>
+
+
+
+<img
+    src="image.jpg"
+    alt="Sample Image"
+    width="300"
+    height="200"
+    title="Sample Image">
+
+
+
+<h3>
+    Image Attributes
+</h3>
+
+
+<ul>
+
+<li>
+    src - image path
+</li>
+
+<li>
+    alt - alternative text
+</li>
+
+<li>
+    width - image width
+</li>
+
+<li>
+    height - image height
+</li>
+
+<li>
+    title - tooltip text
+</li>
+
+<li>
+    loading - lazy loading
+</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- FIGURE -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    2. Figure and Figcaption
+</h2>
+
+
+
+<figure>
+
+
+<img
+    src="nature.jpg"
+    alt="Nature Image"
+    width="300">
+
+
+
+<figcaption>
+    Beautiful nature image
+</figcaption>
+
+
+
+</figure>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- PICTURE -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    3. Picture Element
+</h2>
+
+
+
+<p>
+    Provides different images for different screen sizes.
+</p>
+
+
+
+<picture>
+
+
+<source 
+    media="(min-width:800px)"
+    srcset="large.jpg">
+
+
+<source
+    media="(min-width:400px)"
+    srcset="medium.jpg">
+
+
+<img
+    src="small.jpg"
+    alt="Responsive Image">
+
+
+</picture>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- AUDIO -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    4. Audio Element
+</h2>
+
+
+
+<audio controls>
+
+
+<source
+    src="music.mp3"
+    type="audio/mpeg">
+
+
+
+Your browser does not support audio.
+
+
+</audio>
+
+
+
+
+<h3>
+    Audio Attributes
+</h3>
+
+
+<ul>
+
+
+<li>
+    controls
+</li>
+
+
+<li>
+    autoplay
+</li>
+
+
+<li>
+    loop
+</li>
+
+
+<li>
+    muted
+</li>
+
+
+<li>
+    preload
+</li>
+
+
+</ul>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- VIDEO -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    5. Video Element
+</h2>
+
+
+
+<video
+    width="400"
+    height="250"
+    controls
+    poster="thumbnail.jpg">
+
+
+
+<source
+    src="video.mp4"
+    type="video/mp4">
+
+
+<source
+    src="video.webm"
+    type="video/webm">
+
+
+
+Your browser does not support video.
+
+
+</video>
+
+
+
+<h3>
+    Video Attributes
+</h3>
+
+
+<ul>
+
+
+<li>
+    controls
+</li>
+
+
+<li>
+    autoplay
+</li>
+
+
+<li>
+    loop
+</li>
+
+
+<li>
+    muted
+</li>
+
+
+<li>
+    poster
+</li>
+
+
+<li>
+    preload
+</li>
+
+
+<li>
+    width
+</li>
+
+
+<li>
+    height
+</li>
+
+
+</ul>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- TRACK -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    6. Track Element
+</h2>
+
+
+
+<video controls width="400">
+
+
+<source
+    src="movie.mp4"
+    type="video/mp4">
+
+
+<track
+    src="subtitles.vtt"
+    kind="subtitles"
+    srclang="en"
+    label="English">
+
+
+
+</video>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- SVG -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    7. SVG (Scalable Vector Graphics)
+</h2>
+
+
+
+<svg
+    width="200"
+    height="200">
+
+
+
+<circle
+    cx="100"
+    cy="100"
+    r="50"
+    fill="blue">
+
+
+
+</circle>
+
+
+
+</svg>
+
+
+
+<h3>
+    Common SVG Elements
+</h3>
+
+
+<ul>
+
+
+<li>
+    svg
+</li>
+
+
+<li>
+    circle
+</li>
+
+
+<li>
+    rect
+</li>
+
+
+<li>
+    line
+</li>
+
+
+<li>
+    polygon
+</li>
+
+
+<li>
+    text
+</li>
+
+
+</ul>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- CANVAS -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    8. Canvas Element
+</h2>
+
+
+
+<canvas
+    width="300"
+    height="150">
+
+
+Your browser does not support canvas.
+
+
+</canvas>
+
+
+
+<p>
+    Canvas is used for drawing graphics using JavaScript.
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- EMBED -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    9. Embed Element
+</h2>
+
+
+
+<embed
+    src="document.pdf"
+    type="application/pdf"
+    width="500"
+    height="400">
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- OBJECT -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    10. Object Element
+</h2>
+
+
+
+<object
+    data="document.pdf"
+    type="application/pdf"
+    width="500"
+    height="400">
+
+
+</object>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- MEDIA GLOBAL ATTRIBUTES -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    11. Common Media Attributes
+</h2>
+
+
+
+<ul>
+
+
+<li>
+    src
+</li>
+
+
+<li>
+    alt
+</li>
+
+
+<li>
+    width
+</li>
+
+
+<li>
+    height
+</li>
+
+
+<li>
+    controls
+</li>
+
+
+<li>
+    autoplay
+</li>
+
+
+<li>
+    loop
+</li>
+
+
+<li>
+    muted
+</li>
+
+
+<li>
+    preload
+</li>
+
+
+<li>
+    poster
+</li>
+
+
+<li>
+    loading
+</li>
+
+
+</ul>
+
+
+
+</section>
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+<footer>
+
+
+<p>
+    HTML Reference Guide - Media
+</p>
+
+
+</footer>
+
+
+
+
+</body>
+
+</html>

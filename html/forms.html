@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Form Reference</title>
+</head>
+
+<body>
+
+    <h1>HTML Forms All Tags & Attributes</h1>
+
+    <form 
+        action="submit.html"
+        method="GET"
+        accept-charset="UTF-8"
+        autocomplete="on"
+        enctype="multipart/form-data"
+        target="_blank">
+
+
+        <!-- Input type hidden -->
+        <input type="hidden" name="userId" value="101">
+
+
+        <!-- Text -->
+        <label for="fname">First Name:</label>
+        <input 
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Enter first name"
+            minlength="3"
+            maxlength="20"
+            autofocus>
+
+        <br><br>
+
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input 
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            required>
+
+        <br><br>
+
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input 
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required>
+
+        <br><br>
+
+
+        <!-- Telephone -->
+        <label for="phone">Phone:</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            placeholder="9876543210">
+
+        <br><br>
+
+
+        <!-- URL -->
+        <label for="website">Website:</label>
+        <input 
+            type="url"
+            id="website"
+            name="website">
+
+        <br><br>
+
+
+        <!-- Search -->
+        <label for="search">Search:</label>
+        <input 
+            type="search"
+            id="search"
+            name="search">
+
+        <br><br>
+
+
+        <!-- Number -->
+        <label for="age">Age:</label>
+        <input 
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="60"
+            step="1">
+
+        <br><br>
+
+
+        <!-- Range -->
+        <label for="volume">Volume:</label>
+        <input 
+            type="range"
+            id="volume"
+            name="volume"
+            min="0"
+            max="100"
+            step="10">
+
+        <br><br>
+
+
+        <!-- Color -->
+        <label for="color">Choose Color:</label>
+        <input 
+            type="color"
+            id="color"
+            name="color">
+
+        <br><br>
+
+
+        <!-- Date -->
+        <label for="date">Date:</label>
+        <input 
+            type="date"
+            id="date"
+            name="date">
+
+        <br><br>
+
+
+        <!-- Time -->
+        <label for="time">Time:</label>
+        <input 
+            type="time"
+            id="time"
+            name="time">
+
+        <br><br>
+
+
+        <!-- Datetime -->
+        <label for="datetime">Date & Time:</label>
+        <input 
+            type="datetime-local"
+            id="datetime"
+            name="datetime">
+
+        <br><br>
+
+
+        <!-- Month -->
+        <label for="month">Month:</label>
+        <input 
+            type="month"
+            id="month"
+            name="month">
+
+        <br><br>
+
+
+        <!-- Week -->
+        <label for="week">Week:</label>
+        <input 
+            type="week"
+            id="week"
+            name="week">
+
+        <br><br>
+
+
+        <!-- Radio -->
+        <p>Select Gender:</p>
+
+        <input 
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            checked>
+
+        <label for="male">Male</label>
+
+
+        <input 
+            type="radio"
+            id="female"
+            name="gender"
+            value="female">
+
+        <label for="female">Female</label>
+
+
+        <input 
+            type="radio"
+            id="other"
+            name="gender"
+            value="other">
+
+        <label for="other">Other</label>
+
+
+        <br><br>
+
+
+        <!-- Checkbox -->
+        <p>Select Hobbies:</p>
+
+        <input
+            type="checkbox"
+            id="reading"
+            name="hobbies"
+            value="reading">
+
+        <label for="reading">Reading</label>
+
+
+        <input
+            type="checkbox"
+            id="music"
+            name="hobbies"
+            value="music">
+
+        <label for="music">Music</label>
+
+
+        <input
+            type="checkbox"
+            id="sports"
+            name="hobbies"
+            value="sports">
+
+        <label for="sports">Sports</label>
+
+
+        <br><br>
+
+
+        <!-- File -->
+        <label for="file">Upload File:</label>
+
+        <input
+            type="file"
+            id="file"
+            name="file"
+            multiple
+            accept=".jpg,.png,.pdf">
+
+        <br><br>
+
+
+        <!-- Datalist -->
+        <label for="browser">Choose Browser:</label>
+
+        <input 
+            list="browsers"
+            id="browser"
+            name="browser">
+
+
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+        </datalist>
+
+
+        <br><br>
+
+
+        <!-- Select -->
+        <label for="course">Choose Course:</label>
+
+        <select 
+            id="course"
+            name="course">
+
+
+            <optgroup label="Frontend">
+
+                <option value="html">
+                    HTML
+                </option>
+
+                <option value="css">
+                    CSS
+                </option>
+
+                <option value="js">
+                    JavaScript
+                </option>
+
+            </optgroup>
+
+
+            <optgroup label="Backend">
+
+                <option value="java">
+                    Java
+                </option>
+
+                <option value="python">
+                    Python
+                </option>
+
+            </optgroup>
+
+
+        </select>
+
+
+        <br><br>
+
+
+        <!-- Multiple Select -->
+
+        <label for="skills">
+            Select Skills:
+        </label>
+
+        <br>
+        <select 
+            id="skills"
+            name="skills"
+            multiple>
+
+
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+
+
+        </select>
+
+
+        <br><br>
+
+
+        <!-- Textarea -->
+
+        <label for="comments">
+            Comments:
+        </label>
+
+        <br>
+
+        <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="30"
+            placeholder="Write your comment">
+        </textarea>
+
+
+        <br><br>
+
+
+        <!-- Fieldset -->
+
+        <fieldset>
+
+            <legend>
+                Personal Information
+            </legend>
+
+
+            <label for="fullname">
+                Full Name:
+            </label>
+
+            <input
+                type="text"
+                id="fullname"
+                name="fullname">
+
+
+            <br><br>
+
+
+            <label for="city">
+                City:
+            </label>
+
+            <input
+                type="text"
+                id="city"
+                name="city">
+
+
+        </fieldset>
+
+
+        <br><br>
+
+
+        <!-- Meter -->
+
+        <label>
+            Storage:
+        </label>
+
+        <meter
+            min="0"
+            max="100"
+            value="70">
+            70%
+        </meter>
+
+
+        <br><br>
+
+
+        <!-- Progress -->
+
+        <label>
+            Progress:
+        </label>
+
+        <progress
+            value="60"
+            max="100">
+            60%
+        </progress>
+
+
+        <br><br>
+
+
+        <!-- Output -->
+
+        <label>
+            Result:
+        </label>
+
+        <output>
+            100
+        </output>
+
+
+        <br><br>
+
+
+        <!-- Buttons -->
+
+        <input 
+            type="submit"
+            value="Submit">
+
+
+        <input 
+            type="reset"
+            value="Reset">
+
+
+        <input 
+            type="button"
+            value="Button">
+
+
+        <button>
+            Normal Button
+        </button>
+
+
+    </form>
+
+
+</body>
+
+</html>

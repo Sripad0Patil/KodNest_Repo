@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML iframe Reference</title>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<h1>
+    HTML iframe Reference
+</h1>
+
+
+<p>
+    Complete examples of HTML iframe element and attributes.
+</p>
+
+
+
+<nav>
+
+
+<a href="index.html">
+    Home
+</a>
+
+
+|
+
+
+<a href="media.html">
+    Media
+</a>
+
+
+|
+
+
+<a href="audio-video.html">
+    Audio Video
+</a>
+
+
+</nav>
+
+
+
+</header>
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<main>
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- BASIC IFRAME -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    1. Basic iframe Element
+</h2>
+
+
+
+<p>
+The iframe tag is used to embed another webpage inside the current page.
+</p>
+
+
+
+<iframe
+src="https://example.com"
+width="600"
+height="300"
+title="Example Website">
+
+
+</iframe>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- IFRAME ATTRIBUTES -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    2. iframe Attributes
+</h2>
+
+
+
+<table border="1">
+
+
+<tr>
+
+<th>
+Attribute
+</th>
+
+
+<th>
+Purpose
+</th>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+src
+</td>
+
+
+<td>
+URL of the embedded page
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+width
+</td>
+
+
+<td>
+Width of iframe
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+height
+</td>
+
+
+<td>
+Height of iframe
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+title
+</td>
+
+
+<td>
+Description for accessibility
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+loading
+</td>
+
+
+<td>
+Controls loading behavior
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+allow
+</td>
+
+
+<td>
+Allows browser features
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+sandbox
+</td>
+
+
+<td>
+Adds security restrictions
+</td>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>
+srcdoc
+</td>
+
+
+<td>
+HTML content directly inside iframe
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- YOUTUBE EMBED -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    3. YouTube Video Embed
+</h2>
+
+
+
+<iframe
+
+width="560"
+
+height="315"
+
+src="https://www.youtube.com/embed/video_id"
+
+title="YouTube Video Player"
+
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+
+allowfullscreen>
+
+
+</iframe>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- GOOGLE MAP -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    4. Google Map Embed Example
+</h2>
+
+
+
+<iframe
+
+width="600"
+
+height="300"
+
+src="https://www.google.com/maps/embed"
+
+title="Google Map">
+
+
+</iframe>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- LOCAL HTML FILE -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    5. Embedding Local HTML Page
+</h2>
+
+
+
+<iframe
+
+src="about.html"
+
+width="500"
+
+height="300"
+
+title="Local Page">
+
+
+</iframe>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- SRCdoc -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    6. srcdoc Attribute
+</h2>
+
+
+
+<p>
+Displays HTML content directly inside iframe.
+</p>
+
+
+
+<iframe
+
+width="400"
+
+height="200"
+
+srcdoc="
+
+<h1>
+Hello iframe
+</h1>
+
+<p>
+This content comes from srcdoc attribute.
+</p>
+
+">
+
+
+</iframe>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- SANDBOX -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    7. Sandbox Attribute
+</h2>
+
+
+
+<p>
+Sandbox adds security restrictions to iframe content.
+</p>
+
+
+
+<iframe
+
+src="example.html"
+
+width="400"
+
+height="200"
+
+sandbox>
+
+
+</iframe>
+
+
+
+<h3>
+Sandbox Permissions
+</h3>
+
+
+
+<ul>
+
+
+<li>
+allow-forms - allows forms
+</li>
+
+
+<li>
+allow-modals - allows popup dialogs
+</li>
+
+
+<li>
+allow-orientation-lock - allows screen orientation
+</li>
+
+
+<li>
+allow-pointer-lock - allows pointer lock
+</li>
+
+
+<li>
+allow-popups - allows popups
+</li>
+
+
+<li>
+allow-same-origin - keeps original origin
+</li>
+
+
+<li>
+allow-scripts - allows JavaScript
+</li>
+
+
+<li>
+allow-downloads - allows downloads
+</li>
+
+
+</ul>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- LOADING -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    8. Loading Attribute
+</h2>
+
+
+
+<h3>
+Lazy Loading
+</h3>
+
+
+<iframe
+
+src="page.html"
+
+loading="lazy"
+
+width="400"
+
+height="200">
+
+
+</iframe>
+
+
+
+
+<h3>
+Eager Loading
+</h3>
+
+
+
+<iframe
+
+src="page.html"
+
+loading="eager"
+
+width="400"
+
+height="200">
+
+
+</iframe>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- ALLOW ATTRIBUTE -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    9. allow Attribute
+</h2>
+
+
+
+<p>
+Controls browser features available to iframe.
+</p>
+
+
+
+<iframe
+
+src="video.html"
+
+allow="fullscreen; autoplay; camera; microphone"
+
+width="400"
+
+height="200">
+
+
+</iframe>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- RESPONSIVE IFRAME -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    10. Responsive iframe Concept
+</h2>
+
+
+
+<p>
+
+The iframe can adjust according to screen size.
+
+</p>
+
+
+
+<iframe
+
+src="page.html"
+
+width="100%"
+
+height="300"
+
+title="Responsive iframe">
+
+
+</iframe>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- IFRAME USE CASES -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    11. Common iframe Uses
+</h2>
+
+
+
+<ul>
+
+
+<li>
+YouTube videos
+</li>
+
+
+<li>
+Google Maps
+</li>
+
+
+<li>
+Online documents
+</li>
+
+
+<li>
+Payment pages
+</li>
+
+
+<li>
+External websites
+</li>
+
+
+<li>
+Advertisements
+</li>
+
+
+<li>
+Web applications
+</li>
+
+
+</ul>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================================= -->
+<!-- IFRAME SECURITY -->
+<!-- ================================= -->
+
+
+<section>
+
+
+<h2>
+    12. iframe Security Practices
+</h2>
+
+
+
+<ul>
+
+
+<li>
+Use sandbox when embedding unknown content.
+</li>
+
+
+<li>
+Use title attribute for accessibility.
+</li>
+
+
+<li>
+Avoid embedding untrusted websites.
+</li>
+
+
+<li>
+Use HTTPS sources.
+</li>
+
+
+<li>
+Limit permissions using allow attribute.
+</li>
+
+
+</ul>
+
+
+
+</section>
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<footer>
+
+
+<p>
+HTML Reference Guide - iframe
+</p>
+
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>
