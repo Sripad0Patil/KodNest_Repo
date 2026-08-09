@@ -1,0 +1,143 @@
+/* pseudo-class: hover  */
+button:hover {
+  background: blue;
+  color: white;
+}
+
+/* pseudo-class: active  */
+button:active {
+  background: red;
+}
+
+/* pseudo-class: focus and its variations */
+#input1:focus {
+  border:2px solid orange;
+  outline: none;
+}
+
+#input2:focus-visible{
+    outline:3px solid red;
+}
+
+.box:focus-within{
+    background:lightblue;
+}
+
+/* pseudo-class: link and its variations*/
+a:link{
+    color:blue;
+}
+
+a:visited{
+    color:purple;
+}
+
+a:any-link{
+    text-decoration:none;
+}
+
+a:local-link{
+    color:red;
+}
+
+/* pseudo-class: checked  */
+#input3:checked{
+    width: 50px;
+}
+
+/* pseudo-class: disabled  */
+#input4:disabled {
+    background: gray;
+}
+
+/* pseudo-class: enabled  */
+#input5:enabled{
+    border:2px solid green;
+}
+
+/* pseudo-class: required  */
+#input6:required{
+    border:2px solid red;
+}
+
+/* pseudo-class: optional  */
+#input7:optional{
+    background:#eee;
+}
+
+/* pseudo-class: read-only  */
+#input8:read-only{
+    background:lightgray;
+}
+
+/* pseudo-class: read-write  */
+#input9:read-write{
+    background:rgb(180, 161, 161);
+}
+
+/* pseudo-class: valid  */
+#input10:valid{
+    border:2px solid rgb(13, 188, 13);
+}
+
+/* pseudo-class: invalid  */
+#input11:invalid{
+    border:2px solid red;
+}
+
+/* pseudo-class: in-range  */
+#input12:in-range{
+    background:lightgreen;
+}
+
+/* pseudo-class: out-of-range  */
+#input13:out-of-range{
+    background:pink;
+}
+
+/* pseudo-class: placeholder-shown  */
+#input14:placeholder-shown{
+    background:yellow;
+}
+
+/* pseudo-class: nth-child()  */
+li:nth-child(2) {
+  color: red;
+}
+
+li:nth-child(even) {
+  background: lightgray;
+}
+
+li:nth-child(odd) {
+  background: yellow;
+}
+
+li:nth-child(3n) {
+  color: blue;
+}
+
+/* pseudo-class: nth-of-type()  */
+p:nth-of-type(2) {
+    color: red;
+}
+
+/* pseudo-class: first-child  */
+li:first-child {
+    font-weight: bold;
+}
+
+/* pseudo-class: :last-child  */
+li:last-child {
+    color: green;
+}
+
+/* pseudo-class: only-child  */
+p:only-child {
+    color: red;
+}
+
+/* pseudo-class: not()  */
+li:not(.active) {
+    color: gray;
+}

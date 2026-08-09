@@ -1,0 +1,56 @@
+/* universal selector  */
+* {
+    margin: 0;
+    padding: 30px;
+}
+
+/* tag/element selector */
+h1 {
+    color: orange;
+}
+
+/* class selector */
+.definition {
+    color: blue;
+}
+
+.selectors {
+    margin: 10px;
+    border: 2px solid black;
+}
+
+/* id selector  */
+#css {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* attribute selector  */
+input[type="text"] {
+    background-color: antiquewhite;
+}
+
+/* descendent selector  */
+div p {
+    background-color: chartreuse;
+}
+
+/* child selector  */
+div > div {
+    background-color: burlywood;
+}
+
+/* adjacent sibling selector  */
+#child1 + #child2 {
+    background-color: chocolate;
+}
+
+/* general sibling selector  */
+#child2 ~ #child4 {
+    background-color: cadetblue;
+}
+
+/* group selector  */
+#child1, #child2, #child3, #child3, #parents {
+    color: white;
+}

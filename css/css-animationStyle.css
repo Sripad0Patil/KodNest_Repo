@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: steelblue;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold;
+
+    /* Animation Properties */
+    animation-name: moveBox;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+/* Keyframes */
+@keyframes moveBox {
+
+    0% {
+        transform: translateX(0);
+        background: steelblue;
+    }
+
+    25% {
+        transform: translateX(150px);
+        background: green;
+    }
+
+    50% {
+        transform: translateX(150px) rotate(180deg);
+        background: orange;
+    }
+
+    75% {
+        transform: translateX(50px);
+        background: purple;
+    }
+
+    100% {
+        transform: translateX(0);
+        background: crimson;
+    }
+}

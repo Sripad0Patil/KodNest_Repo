@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.box {
+    width: 180px;
+    height: 80px;
+    background: steelblue;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    margin: 40px;
+    transition: 0.5s;
+}
+
+/* 1. Translate */
+.translate:hover {
+    transform: translate(80px, 20px);
+}
+
+/* 2. Rotate */
+.rotate:hover {
+    transform: rotate(30deg);
+}
+
+/* 3. Scale */
+.scale:hover {
+    transform: scale(1.5);
+}
+
+/* 4. Skew */
+.skew:hover {
+    transform: skew(20deg, 10deg);
+}
+
+/* 5. Combination of all transform values */
+.combo:hover {
+    transform: translate(40px, 20px)
+               rotate(20deg)
+               scale(1.2)
+               skew(10deg, 5deg);
+}
+
+/* Container */
+.origin-container {
+    margin-top: 60px;
+}
+
+/* Transform-Origin Example */
+.origin {
+    background: crimson;
+    transform-origin: top left;
+}
+
+.origin:hover {
+    transform: rotate(45deg);
+}

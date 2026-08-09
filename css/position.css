@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.box {
+    width: 200px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Default position */
+.static {
+    position: static;
+    background: gray;
+}
+
+/* Moves relative to its original position */
+.relative {
+    position: relative;
+    left: 50px;
+    background: blue;
+}
+
+/* Parent for absolute positioning */
+.parent {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+/* Positioned relative to the parent */
+.absolute {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: red;
+}
+
+/* Stays fixed on the screen */
+.fixed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: green;
+}
+
+/* Sticks when scrolling */
+.sticky {
+    position: sticky;
+    top: 0;
+    background: orange;
+}
+
+.content {
+    height: 1200px;
+}

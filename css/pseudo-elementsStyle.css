@@ -1,0 +1,101 @@
+/* General Page Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    line-height: 1.8;
+}
+
+h2 {
+    color: #0066cc;
+}
+
+/* ===================================
+   1. ::before
+=================================== */
+
+.before-after::before {
+    content: "⭐ ";
+    color: orange;
+    font-size: 24px;
+}
+
+/* ===================================
+   2. ::after
+=================================== */
+
+.before-after::after {
+    content: " 🚀";
+    color: green;
+    font-size: 20px;
+}
+
+/* ===================================
+   3. ::first-line
+=================================== */
+
+.first-line {
+    width: 450px;
+}
+
+.first-line::first-line {
+    color: red;
+    font-weight: bold;
+}
+
+/* ===================================
+   4. ::first-letter
+=================================== */
+
+.first-letter::first-letter {
+    font-size: 40px;
+    color: blue;
+    font-weight: bold;
+}
+
+/* ===================================
+   5. ::placeholder
+=================================== */
+
+input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+/* ===================================
+   6. ::selection
+=================================== */
+
+::selection {
+    background-color: yellow;
+    color: red;
+}
+
+/* ===================================
+   7. ::marker
+=================================== */
+
+li::marker {
+    color: crimson;
+    font-size: 22px;
+}
+
+/* ===================================
+   8. ::backdrop
+=================================== */
+
+dialog {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}

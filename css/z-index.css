@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.box {
+    width: 180px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    font-weight: bold;
+}
+
+.red {
+    background: red;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.blue {
+    background: blue;
+    top: 50px;
+    left: 70px;
+    z-index: 2;
+}
+
+.green {
+    background: green;
+    top: 80px;
+    left: 120px;
+    z-index: 3;
+}

@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    margin: 30px auto;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 150px;
+    border-radius: 10px;
+}
+
+/* 1. Linear Gradient */
+.linear {
+    background: linear-gradient(to right, red, yellow, green);
+}
+
+/* 2. Radial Gradient */
+.radial {
+    background: radial-gradient(circle, yellow, orange, red);
+}
+
+/* 3. Conic Gradient */
+.conic {
+    background: conic-gradient(red, yellow, lime, cyan, blue, magenta, red);
+}

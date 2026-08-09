@@ -1,0 +1,43 @@
+/* Default styles (Desktop) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Media Query for tablets and mobiles */
+@media screen and (max-width: 768px) {
+
+    body {
+        background-color: lightyellow;
+    }
+
+    .container {
+        width: 90%;
+        background-color: lightgreen;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

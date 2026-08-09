@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements Demo</title>
+    <link rel="stylesheet" href="/css/pseudo-elementsStyle.css">
+</head>
+<body>
+
+    <h1 class="before-after">CSS Pseudo-elements</h1>
+
+    <h2>1. ::before and ::after</h2>
+    <p class="before-after">
+        This paragraph demonstrates the before and after pseudo-elements.
+    </p>
+
+    <hr>
+
+    <h2>2. ::first-line</h2>
+    <p class="first-line">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+        doloremque praesentium laborum dicta, quia suscipit, cupiditate
+        laboriosam quibusdam vero deleniti amet molestiae minima. This paragraph
+        is long enough to wrap into multiple lines so that the first-line
+        pseudo-element can be seen.
+    </p>
+
+    <hr>
+
+    <h2>3. ::first-letter</h2>
+    <p class="first-letter">
+        Cascading Style Sheets make web pages attractive and responsive.
+    </p>
+
+    <hr>
+
+    <h2>4. ::placeholder</h2>
+    <input type="text" placeholder="Enter your full name">
+
+    <hr>
+
+    <h2>5. ::selection</h2>
+    <p>
+        Select this text with your mouse to see the selection color effect.
+    </p>
+
+    <hr>
+
+    <h2>6. ::marker</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <hr>
+
+    <h2>7. ::backdrop</h2>
+
+    <button onclick="document.getElementById('dialog').showModal()">
+        Open Dialog
+    </button>
+
+    <dialog id="dialog">
+        <h3>Hello!</h3>
+        <p>The backdrop behind this dialog is styled using ::backdrop.</p>
+
+        <button onclick="document.getElementById('dialog').close()">
+            Close
+        </button>
+    </dialog>
+
+</body>
+</html>
