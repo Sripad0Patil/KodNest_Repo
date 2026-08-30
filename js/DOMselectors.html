@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selectors Practice</title>
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- getElementById() - Counter -->
+    <!-- ============================= -->
+
+    <h2 id="count">0</h2>
+
+    <button onclick="increase()">
+        <b>Increment</b>
+    </button>
+
+    <button onclick="decrease()">
+        <b>Decrement</b>
+    </button>
+
+
+    <!-- ============================= -->
+    <!-- getElementById() - Change Text -->
+    <!-- ============================= -->
+
+    <h2 id="heading">Hello!</h2>
+
+    <button onclick="reveal()">
+        <b>Push</b>
+    </button>
+
+
+    <!-- ============================= -->
+    <!-- getElementsByClassName() -->
+    <!-- ============================= -->
+
+    <h3>getElementsByClassName()</h3>
+
+    <p class="text">First paragraph</p>
+    <p class="text">Second paragraph</p>
+
+    <button onclick="changeByClass()">
+        <b>Change by Class</b>
+    </button>
+
+
+    <!-- ============================= -->
+    <!-- getElementsByTagName() -->
+    <!-- ============================= -->
+
+    <h3>getElementsByTagName()</h3>
+
+    <button onclick="changeByTag()">
+        <b>Change by Tag</b>
+    </button>
+
+
+    <!-- ============================= -->
+    <!-- querySelector() -->
+    <!-- ============================= -->
+
+    <h3>querySelector()</h3>
+
+    <button onclick="changeByQuery()">
+        <b>Change First Paragraph</b>
+    </button>
+
+
+    <!-- ============================= -->
+    <!-- querySelectorAll() -->
+    <!-- ============================= -->
+
+    <h3>querySelectorAll()</h3>
+
+    <button onclick="changeAllByQuery()">
+        <b>Change All Paragraphs</b>
+    </button>
+
+
+    <!-- ============================= -->
+    <!-- Additional elements -->
+    <!-- ============================= -->
+
+    <div>
+        <span>Inside div</span>
+    </div>
+
+    <input
+        name="username"
+        type="text"
+        placeholder="Enter username"
+    >
+
+
+    <!-- JavaScript -->
+    <script src="DOMselectors.js"></script>
+
+</body>
+
+</html>
