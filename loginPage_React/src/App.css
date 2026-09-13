@@ -1,0 +1,24 @@
+.login-page {
+  background-color: white;
+  color: black;
+  width: 350px;
+  height: 250px
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  align-items: center;
+}
+
+.username-row {
+  display: flex;
+  /* gap: 20px; */
+}
+
+.password-row {
+  display: flex;
+  /* gap: 30px; */
+}
